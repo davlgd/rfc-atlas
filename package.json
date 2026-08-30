@@ -1,0 +1,64 @@
+{
+  "name": "rfc-atlas",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A GPU-accelerated visual map of RFC metadata and relationships.",
+  "author": "davlgd",
+  "license": "MIT",
+  "homepage": "https://rfc.davlgd.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davlgd/rfc-atlas.git"
+  },
+  "engines": {
+    "node": ">=24.19.0"
+  },
+  "packageManager": "npm@12.0.2",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "check": "npm run format:check && npm run lint && npm run deadcode && npm run typecheck && npm test && npm run build",
+    "deadcode": "knip",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint . --max-warnings 0",
+    "postinstall": "npm run build",
+    "preview": "vite preview",
+    "start": "vite preview",
+    "typecheck": "tsc -b --pretty false",
+    "test": "vitest run",
+    "seo:generate": "node scripts/generate-seo.ts",
+    "data:bortzmeyer": "node scripts/update-bortzmeyer-data.ts",
+    "data:update": "node scripts/update-data.ts && npm run seo:generate",
+    "data:offline": "node scripts/update-data.ts --offline && npm run seo:generate",
+    "data:sample": "node scripts/update-data.ts --sample=350"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^6.1.1",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "three": "^0.185.1",
+    "vite": "^8.2.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^26.4.0",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.5",
+    "@types/three": "^0.185.4",
+    "eslint": "^10.9.1",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.5",
+    "fast-xml-parser": "^5.11.1",
+    "globals": "^17.11.0",
+    "knip": "^6.33.0",
+    "prettier": "^3.9.6",
+    "typescript": "6.0.3",
+    "typescript-eslint": "^8.68.0",
+    "vitest": "^4.1.11"
+  },
+  "allowScripts": {
+    "fsevents@2.3.3": true
+  }
+}

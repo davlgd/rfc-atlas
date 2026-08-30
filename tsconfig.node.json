@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "target": "ES2022",
+    "skipLibCheck": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noEmit": true,
+    "types": ["node"]
+  },
+  "include": [
+    "vite.config.ts",
+    "scripts/**/*.ts",
+    "tests/**/*.ts",
+    "src/types.ts",
+    "src/config.ts",
+    "src/edge-index.ts",
+    "src/env.d.ts",
+    "src/format.ts",
+    "src/seo.ts",
+    "src/share.ts",
+    "src/spherical-layout.ts",
+    "src/url-state.ts"
+  ]
+}

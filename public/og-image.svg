@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="background" cx="70%" cy="42%" r="75%">
+      <stop offset="0" stop-color="#17294a" />
+      <stop offset="0.48" stop-color="#0d131b" />
+      <stop offset="1" stop-color="#0a0e12" />
+    </radialGradient>
+    <radialGradient id="sphere" cx="45%" cy="38%" r="65%">
+      <stop offset="0" stop-color="#60a5fa" stop-opacity="0.95" />
+      <stop offset="0.45" stop-color="#3b82f6" stop-opacity="0.42" />
+      <stop offset="1" stop-color="#2563eb" stop-opacity="0.04" />
+    </radialGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="10" />
+    </filter>
+    <clipPath id="sphere-clip"><circle cx="900" cy="315" r="235" /></clipPath>
+  </defs>
+  <rect width="1200" height="630" fill="url(#background)" />
+  <g opacity="0.22" stroke="#3b82f6" fill="none" clip-path="url(#sphere-clip)">
+    <circle cx="900" cy="315" r="233" />
+    <ellipse cx="900" cy="315" rx="112" ry="233" />
+    <ellipse cx="900" cy="315" rx="200" ry="233" />
+    <ellipse cx="900" cy="315" rx="233" ry="90" />
+    <ellipse cx="900" cy="315" rx="233" ry="175" />
+  </g>
+  <circle cx="900" cy="315" r="215" fill="url(#sphere)" opacity="0.18" filter="url(#glow)" />
+  <g fill="#60a5fa">
+    <circle cx="790" cy="205" r="5" /><circle cx="975" cy="176" r="7" />
+    <circle cx="1060" cy="280" r="4" /><circle cx="842" cy="346" r="6" />
+    <circle cx="1015" cy="410" r="5" /><circle cx="750" cy="438" r="4" />
+    <circle cx="910" cy="500" r="6" /><circle cx="1090" cy="370" r="3" />
+  </g>
+  <g stroke="#60a5fa" stroke-width="3" fill="none" opacity="0.82">
+    <path d="M790 205 Q900 105 975 176" /><path d="M975 176 Q1080 210 1060 280" />
+    <path d="M842 346 Q930 275 1060 280" /><path d="M842 346 Q900 455 1015 410" />
+  </g>
+  <text x="82" y="188" fill="#3b82f6" font-family="Arial, sans-serif" font-size="72" font-weight="300">/</text>
+  <text x="145" y="188" fill="#d6dde6" font-family="Arial, sans-serif" font-size="66" font-weight="800" letter-spacing="8">RFC</text>
+  <text x="305" y="188" fill="#3b82f6" font-family="Arial, sans-serif" font-size="66" font-weight="500" letter-spacing="8">ATLAS</text>
+  <text x="86" y="292" fill="#d6dde6" font-family="Georgia, serif" font-size="48">The living map of</text>
+  <text x="86" y="350" fill="#d6dde6" font-family="Georgia, serif" font-size="48">Internet standards.</text>
+  <text x="88" y="426" fill="#8a98a8" font-family="Arial, sans-serif" font-size="24">Explore every RFC, citation and relationship in 3D.</text>
+  <text x="88" y="534" fill="#4f5d6f" font-family="monospace" font-size="20" letter-spacing="2">RFC.DAVLGD.FR</text>
+</svg>
